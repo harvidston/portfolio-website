@@ -1,0 +1,26 @@
+@import url(//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended);
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@100&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Monument Extended';
+}
+::-moz-selection {
+	background: #FA7F22;
+}
+::-webkit-selection {
+	background: #FA7F22;
+}
+::selection {
+	background: #FA7F22;
+}
+html.has-scroll-smooth {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;  
+}
+
+
