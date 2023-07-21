@@ -13,6 +13,13 @@ export const NavigationContainer = styled.nav`
 	align-items: center;
 	background: transparent;
 	z-index: 1;
+	@media screen and (max-width: 500px){
+		position: fixed;
+		bottom: 0;
+		//right: 100px;
+		height: 10%;
+		width: 100%;
+	}
 `
 
 export const NavigationLogo = styled.div`
@@ -36,6 +43,12 @@ export const Menu = styled.div`
 	backdrop-filter: blur(5px);
 	border: 1px solid #2b2d2e;
 
+	@media screen and (max-width: 500px){
+		width: 400px;
+		height: 80px;
+		flex-direction: row;
+	}
+
 `
 
 export const MenuItem = styled(NavLink)`
@@ -57,6 +70,9 @@ export const MenuItem = styled(NavLink)`
 		color: #FA7F28;
 	}
 	&:hover{
+	}
+	@media screen and (max-width: 500px){
+		margin: 20px;
 	}
 
 `

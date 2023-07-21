@@ -9,6 +9,14 @@ export const FooterContainer = styled.div`
 	height: 20px;
 	width: 100%;
 	background: #29322A;
+	cursor: default;
+	@media screen and (max-width: 500px){
+		height: 30px;
+		width: 95%;
+		text-align: center;
+		margin-top: 10px;
+		white-space: initial;
+	}
 `
 export const RightsContainer = styled.div`
 	display: flex;
@@ -30,6 +38,14 @@ export const MainContainer = styled.div`
 	background: #060508;
 	background: #29322A;
 	overflow: hidden;
+
+	@media screen and (max-width: 2000px){
+		height: 140vh;	
+	}
+	@media screen and (max-width: 500px){
+		justify-content: start;
+		height: 3640px;	
+	}
 `
 export const FirstRow = styled.div`
 	display: flex;
@@ -44,6 +60,16 @@ export const FirstRow = styled.div`
 	row-gap: 20px;
 	margin-bottom: 20px;
 	margin-top: 30px;
+
+	@media screen and (max-width: 2000px){
+		grid-template-columns: 400px 950px 400px ;
+	}
+	@media screen and (max-width: 500px){
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		margin-top: 10px;
+	}
 `
 export const SecondRow = styled.div`
 	display: flex;
@@ -57,6 +83,17 @@ export const SecondRow = styled.div`
 	column-gap: 20px;
 	row-gap: 20px;
 	margin-bottom: 20px;
+
+	@media screen and (max-width: 2000px){
+		grid-template-columns: 950px 400px 400px ;
+	}
+
+	@media screen and (max-width: 500px){
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		margin-top: 10px;
+	}
 `
 export const ThirdRow = styled.div`
 	display: flex;
@@ -70,6 +107,15 @@ export const ThirdRow = styled.div`
 	column-gap: 20px;
 	row-gap: 20px;
 
+	@media screen and (max-width: 2000px){
+		grid-template-columns: 885px 885px ;
+	}
+	@media screen and (max-width: 500px){
+		display: flex;
+		height: fit-content;
+		flex-direction: column;
+		width: 95%;
+	}
 `
 export const NameWidget = styled(motion.div)`
 	display: flex;
@@ -81,6 +127,17 @@ export const NameWidget = styled(motion.div)`
 	width: 1100px;
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	border-radius: 60px;
+
+	@media screen and (max-width: 2000px){
+		height: 400px;
+		width: 950px;
+	}
+	@media screen and (max-width: 500px){
+		height: 100px;
+		width: 380px;
+		border-radius: 10px;
+		padding-bottom: 10px;
+	}
 `
 export const LinksWidget = styled(motion.div)`
 	display: flex;
@@ -92,6 +149,19 @@ export const LinksWidget = styled(motion.div)`
 	width: 960px;
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	border-radius: 60px;
+	overflow: hidden;
+
+	@media screen and (max-width: 2000px){
+		width: 885px;
+	}
+	@media screen and (max-width: 500px){
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		height: fit-content;
+		padding-bottom: 30px;
+		//height: 600px;
+	}
 `
 export const NameContainer = styled.div`
 	display: flex;
@@ -101,6 +171,12 @@ export const NameContainer = styled.div`
 	height: 55%;
 	width: 80%;
 	margin-bottom: 35px;
+
+	@media screen and (max-width: 500px){
+		flex-direction: row;
+		width: 95%;
+		margin-bottom: 0;
+	}
 `
 export const Name = styled.text`
 	font-size: 130px;
@@ -124,6 +200,24 @@ export const Name = styled.text`
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	margin-bottom: 20px;
+
+	@media screen and (max-width: 500px){
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 32px;
+		text-shadow: 1px 1px 1px black,
+		1px 2px 1px black,
+		1px 3px 1px black,
+		1px 4px 1px black,
+		1px 5px 1px black,
+		1px 6px 1px black,
+		1px 7px 1px black,
+		1px 8px 1px black,
+		1px 18px 6px rgba(1, 1, 1, 0.1),
+		1px 22px 10px rgba(1, 1, 1, 0.2),
+		1px 25px 35px rgba(1, 1, 1, 0.2),
+		1px 30px 60px rgba(1, 1, 1, 0.1);
+	}
 `
 
 export const PictureWidget = styled(motion.div)`
@@ -135,6 +229,15 @@ export const PictureWidget = styled(motion.div)`
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	border-radius: 60px;
 	margin-right: 20px;
+
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 500px){
+		height: 380px;
+		width: 380px;
+		margin-right: 0;
+		border-radius: 60px;
+	}
 `
 export const EducationWidget = styled(motion.div)`
 	display: flex;
@@ -145,6 +248,18 @@ export const EducationWidget = styled(motion.div)`
 	width: 1100px;
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	border-radius: 60px;
+	overflow: hidden;
+
+	@media screen and (max-width: 2000px){
+		width: 950px;
+	}
+
+	@media screen and (max-width: 500px){
+		height: 380px;
+		width: 380px;
+		margin-right: 0;
+		border-radius: 60px;
+	}
 `
 export const BackgroundTitle = styled.div`
 	opacity: 10%;
@@ -240,12 +355,24 @@ export const InfoContainer = styled.div`
 
 
 `
+export const Tick = styled.img`
+	height: 40px;
+	object-fit: cover;
+
+	@media screen and (max-width: 500px){
+		height: 20px;
+	}
+`
 
 export const Picture = styled.img`
 	height: 300px;
 	object-fit: cover;
 	border-bottom-right-radius: 30%;
 	border-top-left-radius: 30%;
+
+	@media screen and (max-width: 500px){
+		height: 300px;
+	}
 `
 export const SlideArrowButton = styled.button`
 	display: flex;
@@ -296,6 +423,11 @@ export const LastNameContainer = styled.div`
 	justify-content: center;
 	height: 50%;
 	width: 80%;
+
+	@media screen and (max-width: 500px){
+		height: 50px;
+	}
+
 `
 export const ResumeWidget = styled(motion.div)`
 	display: flex;
@@ -306,6 +438,12 @@ export const ResumeWidget = styled(motion.div)`
 	width: 400px;
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	border-radius: 60px;
+	overflow: hidden;
+
+	@media screen and (max-width: 500px){
+		height: 380px;
+		width: 380px;
+	}
 `
 export const JobTitle = styled.text`
 	display: flex;
@@ -325,6 +463,10 @@ export const JobTitle = styled.text`
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	cursor: default;
+
+	@media screen and (max-width: 500px){
+		font-size: 23px;
+	}
 `
 export const WidgetText = styled.div`
 	display: flex;
@@ -343,6 +485,17 @@ export const WidgetText = styled.div`
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	cursor: default;
+
+	@media screen and (max-width: 2000px){
+		width: 100%;
+		margin-left: 100px;
+	}
+
+	@media screen and (max-width: 500px){
+		width: 100%;
+		margin-left: 80px;
+		font-size: 30px;
+	}
 `
 export const WidgetDescription = styled.div`
 	display: flex;
@@ -354,6 +507,15 @@ export const WidgetDescription = styled.div`
 	//color: #FA7F28;
 	font-size: 16px;
 	cursor: default;
+
+	@media screen and (max-width: 2000px){
+		width: 100%;
+		margin-left: 100px;
+	}
+
+	@media screen and (max-width: 500px){
+		margin-left: 80px;
+	}
 `
 export const PersonalLink = styled(Link)`
 	display: flex;
@@ -373,6 +535,9 @@ export const PersonalLink = styled(Link)`
 
 		color: lightgray;
 		scale: 1.1;
+	}
+	@media screen and (max-width: 500px){
+		margin-bottom: 10px;
 	}
 
 
@@ -406,6 +571,14 @@ export const Icon = styled.div`
 export const EducationContainer = styled.div`
 	width: 80%;	
 	margin-bottom: 70px;	
+
+	@media screen and (max-width: 2000px){
+		width: 90%;
+	}
+	@media screen and (max-width: 500px){
+		width: 90%;
+		margin-bottom: 20px;
+	}
 `
 export const Period = styled.div`
 	width: fit-content;
@@ -416,6 +589,11 @@ export const Period = styled.div`
 	color: gray;
 	margin-bottom: 10px;
 	cursor: default;
+	@media screen and (max-width: 500px){
+		font-size: 14px;
+		white-space: initial;
+		margin-left: 20px;
+	}
 `
 export const BachelorDegree = styled.div`
 	font-size: 40px;
@@ -435,6 +613,15 @@ export const BachelorDegree = styled.div`
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	cursor: default;
 
+	@media screen and (max-width: 2000px){
+		font-size: 38px;
+	}
+	@media screen and (max-width: 500px){
+		font-size: 20px;
+		white-space:initial;
+		margin-left: 20px;
+	}
+
 `
 export const Faculty = styled.div`
 	font-size: 18px;
@@ -451,6 +638,15 @@ export const Faculty = styled.div`
 		1px 22px 10px rgba(1, 1, 1, 0.2),
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
+
+	@media screen and (max-width: 2000px){
+		font-size: 17px;
+	}
+	@media screen and (max-width: 500px){
+		margin-left: 20px;
+		font-size: 14px;
+	}
+
 `
 export const University = styled.div`
 	font-size: 18px;
@@ -466,12 +662,26 @@ export const University = styled.div`
 		1px 22px 10px rgba(1, 1, 1, 0.2),
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
+
+	@media screen and (max-width: 2000px){
+		font-size: 17px;
+	}
+	@media screen and (max-width: 500px){
+		margin-left: 20px;
+		font-size: 14px;
+		white-space: initial;
+	}
 `
 export const LinksContainer = styled.div`
 	display: flex;
 	align-items: center;	
 	justify-content: center;
 	width: 80%;
+
+	@media screen and (max-width: 500px){
+		flex-direction: column;
+		margin-top: 10px;
+	}
 `
 export const EmailCopiedMessage = styled(motion.div)`
 	position: absolute;
@@ -487,4 +697,11 @@ export const EmailCopiedMessage = styled(motion.div)`
 
 	padding: 20px;
 	cursor: default;
+
+	@media screen and (max-width: 500px){
+		position: absolute;
+		bottom: -920px;
+		width: 340px;	
+		font-size: 15px;
+	}
 `
