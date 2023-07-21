@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react';
-import {MainContainer, Picture, FooterContainer, RightsContainer, EmailCopiedMessage, LinksWidget, Button, PersonalLink, LinksContainer, ThirdRow,  SecondRow, Faculty, FirstRow, Period, JobTitle,  BachelorDegree, University,  Icon, ResumeWidget,  NameWidget, EducationWidget, PictureWidget, Name, NameContainer, WidgetText, WidgetDescription, LastNameContainer,  EducationContainer} from './main-styles.js';
+import {MainContainer, Picture, FooterContainer, Tick, RightsContainer, EmailCopiedMessage, LinksWidget, Button, PersonalLink, LinksContainer, ThirdRow,  SecondRow, Faculty, FirstRow, Period, JobTitle,  BachelorDegree, University,  Icon, ResumeWidget,  NameWidget, EducationWidget, PictureWidget, Name, NameContainer, WidgetText, WidgetDescription, LastNameContainer,  EducationContainer} from './main-styles.js';
 import {ImDownload3} from 'react-icons/im';
 import transition from '../../components/transition';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
@@ -8,6 +8,9 @@ import {RiInstagramFill} from 'react-icons/ri';
 import {BiLogoTelegram} from 'react-icons/bi';
 import {SiLinkedin, SiGithub, SiMaildotru} from 'react-icons/si';
 import Avatar2 from '../../static/images/glasses.jpg';
+import TickSymbol from '../../static/images/verify.png';
+import ResumePDF from '../../static/pdf/resume.pdf';
+
 
 const MainPage = () => {
 	const containerRef = useRef(null)
@@ -60,9 +63,17 @@ const MainPage = () => {
 									stiffness: 100,
 									damping: 30,
 								}}>
-								<Button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.5 }}>
-									<Icon><ImDownload3/> </Icon>
-								</Button>
+
+								<a
+									download = "Alexey-Zaitsev-Resume.pdf"
+									href={ResumePDF} 
+									target="_blank"
+									rel="noreferrer"
+								>
+									<Button  whileHover={{ scale: 1.1 }}>
+										<Icon><ImDownload3/></Icon>
+									</Button>
+								</a>
 								<WidgetDescription>Download</WidgetDescription>
 								<WidgetText>Resume</WidgetText>
 							</ResumeWidget>
@@ -92,6 +103,7 @@ const MainPage = () => {
 					stiffness: 100,
 					damping: 20,
 				}}>
+					Projects
 				</ResumeWidget>
 				<ResumeWidget
 				initial={{ x: 1000,  scale: 0 }}
@@ -138,11 +150,11 @@ const MainPage = () => {
 						<PersonalLink>
 							<Icon><SiLinkedin/> </Icon>
 						</PersonalLink>
-						<PersonalLink>
+						<PersonalLink to="https://github.com/harvidston" target="_blank" >
 							<Icon><SiGithub/> </Icon>
 						</PersonalLink>
 					</LinksContainer>
-					<WidgetDescription>Download</WidgetDescription>
+					<WidgetDescription>Know more about me</WidgetDescription>
 					<WidgetText>Me & Code</WidgetText>
 				</LinksWidget>
 			</ThirdRow>
@@ -163,7 +175,7 @@ const MainPage = () => {
 				onAnimationComplete={() => {setIsCopied(false)}}
 			>
 
-				Email copied to the clipboard!
+			<Tick src = {TickSymbol}/>&nbsp;Email copied to the clipboard !
 			</EmailCopiedMessage>
 		: null}
 
