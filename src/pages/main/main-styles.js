@@ -672,6 +672,13 @@ export const University = styled.div`
 		white-space: initial;
 	}
 `
+export const LocationContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	
+`
 export const LinksContainer = styled.div`
 	display: flex;
 	align-items: center;	
@@ -697,6 +704,7 @@ export const EmailCopiedMessage = styled(motion.div)`
 
 	padding: 20px;
 	cursor: default;
+	height: 20px;
 
 	@media screen and (max-width: 500px){
 		position: absolute;

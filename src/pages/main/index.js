@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react';
-import {MainContainer, Picture, FooterContainer, Tick, RightsContainer, EmailCopiedMessage, LinksWidget, Button, PersonalLink, LinksContainer, ThirdRow,  SecondRow, Faculty, FirstRow, Period, JobTitle,  BachelorDegree, University,  Icon, ResumeWidget,  NameWidget, EducationWidget, PictureWidget, Name, NameContainer, WidgetText, WidgetDescription, LastNameContainer,  EducationContainer} from './main-styles.js';
+import {MainContainer, Picture, LocationContainer, FooterContainer, Tick, RightsContainer, EmailCopiedMessage, LinksWidget, Button, PersonalLink, LinksContainer, ThirdRow,  SecondRow, Faculty, FirstRow, Period, JobTitle,  BachelorDegree, University,  Icon, ResumeWidget,  NameWidget, EducationWidget, PictureWidget, Name, NameContainer, WidgetText, WidgetDescription, LastNameContainer,  EducationContainer} from './main-styles.js';
 import {ImDownload3} from 'react-icons/im';
 import transition from '../../components/transition';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
@@ -7,6 +7,7 @@ import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import {RiInstagramFill} from 'react-icons/ri';
 import {BiLogoTelegram} from 'react-icons/bi';
 import {SiLinkedin, SiGithub, SiMaildotru} from 'react-icons/si';
+import {IoEarth, IoEarthOutline} from 'react-icons/io5';
 import Avatar2 from '../../static/images/glasses.jpg';
 import TickSymbol from '../../static/images/verify.png';
 import ResumePDF from '../../static/pdf/resume.pdf';
@@ -113,6 +114,11 @@ const MainPage = () => {
 					stiffness: 100,
 					damping: 30,
 				}}>
+					<LocationContainer>
+						<Icon style={{fontSize: 150, color: "gray"}}><IoEarthOutline/></Icon>
+					</LocationContainer>
+					<WidgetDescription>Minsk, Belarus</WidgetDescription>
+					<WidgetText>Location</WidgetText>
 				</ResumeWidget>
 			</SecondRow>
 			<ThirdRow>
@@ -154,7 +160,7 @@ const MainPage = () => {
 							<Icon><SiGithub/> </Icon>
 						</PersonalLink>
 					</LinksContainer>
-					<WidgetDescription>Know more about me</WidgetDescription>
+					<WidgetDescription>Get know me better</WidgetDescription>
 					<WidgetText>Me & Code</WidgetText>
 				</LinksWidget>
 			</ThirdRow>
