@@ -54,7 +54,7 @@ const MainPage = () => {
 										<Name>Zaitsev</Name>
 									</LastNameContainer>
 								</NameContainer>
-								<JobTitle>Python Developer</JobTitle>
+								<JobTitle>Python Software Engineer</JobTitle>
 							</NameWidget>
 							<ResumeWidget
 								initial={{ y: -800,  scale: 0 }}
@@ -153,7 +153,7 @@ const MainPage = () => {
 						<PersonalLink to="https://www.instagram.com/lzaitsevl/" target="_blank" >
 							<Icon style={{fontSize: 100, marginTop: 15}}><RiInstagramFill/> </Icon>
 						</PersonalLink>
-						<PersonalLink>
+						<PersonalLink to="https://www.linkedin.com/in/alexeyzaitsev/" target="_blank" >
 							<Icon><SiLinkedin/> </Icon>
 						</PersonalLink>
 						<PersonalLink to="https://github.com/harvidston" target="_blank" >

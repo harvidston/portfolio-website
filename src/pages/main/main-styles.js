@@ -14,7 +14,7 @@ export const FooterContainer = styled.div`
 		height: 30px;
 		width: 95%;
 		text-align: center;
-		margin-top: 10px;
+		margin-top: 40px;
 		white-space: initial;
 	}
 `
@@ -22,10 +22,11 @@ export const RightsContainer = styled.div`
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	font-size: 17px;
-	color: gray;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.4);
 	color: black;
-	color: rgba(0, 0, 0, 0.4)
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 40px;
 
 `
 export const MainContainer = styled.div`
@@ -44,7 +45,7 @@ export const MainContainer = styled.div`
 	}
 	@media screen and (max-width: 500px){
 		justify-content: start;
-		height: 3640px;	
+		height: 3650px;	
 	}
 `
 export const FirstRow = styled.div`

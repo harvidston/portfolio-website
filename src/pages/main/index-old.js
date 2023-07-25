@@ -1,7 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
-import {MainContainer, HeaderContainer, LastName2, LastName3,  Name1, Name2, Description, DescriptionContainer,SocialLink, Name3, NameContainer, LastNameContainer,LastName, ContentContainer, ButtonsContainer, Mask, ResumeButton, Symbol, FullNameContainer, Name, ImageContainer, Image } from './main-styles-old';
+import { Icon, MainContainer, HeaderContainer, LastName2, LastName3,  Name1, Name2, Description, DescriptionContainer,SocialLink, Name3, NameContainer, LastNameContainer,LastName, ContentContainer, ButtonsContainer, Mask, ResumeButton, Symbol, FullNameContainer, Name, ImageContainer, Image } from './main-styles-old';
 
-import Avatar from '../../static/images/30april2.png';
 import AboutSection from '../../components/sections/about';
 import SkillsSection from '../../components/sections/skills';
 import ProjectsSection from '../../components/sections/projects';
@@ -55,9 +54,6 @@ const containerRef = useRef(null)
 
 			</MainContainer>
 
-			<AboutSection/>
-			<SkillsSection data-scroll-section  />
-			<ProjectsSection />
 
   </main>
 			</LocomotiveScrollProvider>
@@ -65,5 +61,5 @@ const containerRef = useRef(null)
 	)
 }
 
-export default transition(MainPage);
+export default MainPage;
 

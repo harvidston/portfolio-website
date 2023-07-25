@@ -2,6 +2,10 @@ import styled, { css, keyframes } from "styled-components";
 import {NavLink, Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 
+export const Icon = styled.div`
+	font-size: 80px;
+	margin-top: 10px;
+`
 export const HeaderContainer = styled.div`
 	position: absolute;
 	top:0;
@@ -48,6 +52,8 @@ export const MainContainer = styled.div`
 	background: #0F0E0D;
 	//background-image: linear-gradient(to top, #849db0, #97b5b9, #b7cac3, #d9ded5, #f5f3ef);
 	background: #29322A;
+	background:  #F5F3EF;
+	background: white;
 `
 export const ContentContainer = styled.div`
 	display: flex;
@@ -74,20 +80,25 @@ export const LastName = styled.text`
 	color: #F5F3EF;
 	-webkit-text-stroke: 1.3px #201F1E;
 
-	text-shadow: 1px 1px 1px black,
-		1px 2px 1px black,
-		1px 3px 1px black,
-		1px 4px 1px black,
-		1px 5px 1px black,
-		1px 6px 1px black,
-		1px 7px 1px black,
-		1px 8px 1px black,
-		1px 9px 1px black,
-		1px 10px 1px black,
-		1px 18px 6px rgba(1, 1, 1, 0.1),
-		1px 22px 10px rgba(1, 1, 1, 0.2),
-		1px 25px 35px rgba(1, 1, 1, 0.2),
-		1px 30px 60px rgba(1, 1, 1, 0.1);
+	color:  #29322A;
+	color: black;
+
+	//text-shadow: 1px 1px 1px black,
+	//1px 2px 1px black,
+	//1px 3px 1px black,
+	//1px 4px 1px black,
+	//1px 5px 1px black,
+	//1px 6px 1px black,
+	//1px 7px 1px black,
+	//1px 8px 1px black,
+	//1px 9px 1px black,
+	//1px 10px 1px black,
+	//1px 11px 1px black,
+	//1px 12px 1px black,
+	//1px 18px 6px rgba(1, 1, 1, 0.1),
+	//1px 22px 10px rgba(1, 1, 1, 0.2),
+	//1px 25px 35px rgba(1, 1, 1, 0.2),
+	//1px 30px 60px rgba(1, 1, 1, 0.1);
 `
 export const Name = styled.text`
 	font-size: 170px;
@@ -96,23 +107,27 @@ export const Name = styled.text`
 	text-transform: uppercase;
 	z-index: 3;
 	color: #F5F3EF;
+	color:  #29322A;
+	color: black;
 
 	//-webkit-text-stroke: 1.3px #201F1E;
 
-	text-shadow: 1px 1px 1px black,
-		1px 2px 1px black,
-		1px 3px 1px black,
-		1px 4px 1px black,
-		1px 5px 1px black,
-		1px 6px 1px black,
-		1px 7px 1px black,
-		1px 8px 1px black,
-		1px 9px 1px black,
-		1px 10px 1px black,
-		1px 18px 6px rgba(1, 1, 1, 0.1),
-		1px 22px 10px rgba(1, 1, 1, 0.2),
-		1px 25px 35px rgba(1, 1, 1, 0.2),
-		1px 30px 60px rgba(1, 1, 1, 0.1);
+	//text-shadow: 1px 1px 1px black,
+	//1px 2px 1px black,
+	//1px 3px 1px black,
+	//1px 4px 1px black,
+	//1px 5px 1px black,
+	//1px 6px 1px black,
+	//1px 7px 1px black,
+	//1px 8px 1px black,
+	//1px 9px 1px black,
+	//1px 10px 1px black,
+	//1px 11px 1px black,
+	//1px 12px 1px black,
+	//1px 18px 6px rgba(1, 1, 1, 0.1),
+	//1px 22px 10px rgba(1, 1, 1, 0.2),
+	//1px 25px 35px rgba(1, 1, 1, 0.2),
+	//1px 30px 60px rgba(1, 1, 1, 0.1);
 `
 export const NameContainer = styled.div`
 	display: flex;
@@ -151,7 +166,7 @@ export const LastNameContainer = styled.div`
 	display: flex;
 	justify-content: end;
 	height: 30%;
-	width: 90%;
+	width: 80%;
 `
 export const ButtonsContainer = styled.div`
 	display: flex;
