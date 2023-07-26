@@ -26,6 +26,7 @@ export const RightsContainer = styled.div`
 	color: rgba(0, 0, 0, 0.4);
 	color: black;
 	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
 	margin-bottom: 40px;
 
 `
@@ -330,8 +331,6 @@ export const MainTransparentContainer = styled.div`
 	width: 100%;
 	background: transparent;
 	background: transparent;
-	//backdrop-filter: blur(1px);
-
 `
 
 export const PictureBackContainer = styled.div`
@@ -344,7 +343,6 @@ export const PictureBackContainer = styled.div`
 	backdrop-filter: blur(2px);
 	border: 1px solid #F5F3EF;
 	border-radius: 70px;
-	//border-radius: 20%;
 `
 
 export const InfoContainer = styled.div`
@@ -353,8 +351,6 @@ export const InfoContainer = styled.div`
 	justify-content: space-between;
 	height: 100vh;
 	width: 60%;
-
-
 `
 export const Tick = styled.img`
 	height: 40px;
@@ -362,6 +358,15 @@ export const Tick = styled.img`
 
 	@media screen and (max-width: 500px){
 		height: 20px;
+	}
+`
+export const PictureProjects = styled.img`
+	height: 200px;
+	object-fit: cover;
+	opacity: 80%;
+
+	@media screen and (max-width: 500px){
+		height: 200px;
 	}
 `
 
@@ -505,7 +510,6 @@ export const WidgetDescription = styled.div`
 	margin-top: 40px;
 	color: #2b2d2e;
 	color: gray;
-	//color: #FA7F28;
 	font-size: 16px;
 	cursor: default;
 
@@ -558,10 +562,7 @@ export const Button = styled(motion.button)`
 	transition: 0.5s;
 
 	&:hover{
-
-		color: #FA7F28;
 		color: lightgray;
-		//color: gray;
 	}
 
 `

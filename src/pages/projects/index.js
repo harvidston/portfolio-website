@@ -2,9 +2,8 @@ import React, {useRef} from 'react';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
-import transition from '../../components/transition';
 import {ProjectsContainer, NavigationButton, Technology, ContentContainer, ProjectNameContainer, TechnologyContainer,PictureContainer, ProjectName, Picture} from './projects-styles';
-import ArtProject from '../../static/images/artproject.png';
+import Desktop from '../../static/images/main_project/Desktop.png';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -55,28 +54,8 @@ const ProjectsSection = () => {
 					stiffness: 500,
 					damping: 90,
 				}}
-		src = {ArtProject}/>
+		src = {Desktop}/>
 		</PictureContainer>
-		<TechnologyContainer >
-			<Technology 
-				initial={{ scale: 0.5 }}
-				animate={{scale: 1}}
-				transition={{
-					type: "spring",
-					stiffness: 500,
-					damping: 90,
-				}}>
-		Backend</Technology>
-		<Technology
-				initial={{ scale: 0.5 }}
-				animate={{scale: 1}}
-				transition={{
-					type: "spring",
-					stiffness: 500,
-					damping: 90,
-				}}>
-		Frontend</Technology>
-		</TechnologyContainer>
 						</ContentContainer>	
 					</ProjectsContainer>
 				</main>

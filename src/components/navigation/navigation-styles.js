@@ -16,23 +16,20 @@ export const NavigationContainer = styled.nav`
 	@media screen and (max-width: 500px){
 		position: fixed;
 		bottom: 0;
-		//right: 100px;
-		height: 10%;
+		height: 80px;
 		width: 100%;
 	}
 `
 
 export const NavigationLogo = styled.div`
 	display: flex;
-	height: 10px;
-	width: 10px;
 `
 
 export const Menu = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 80px;
-	height: 330px;
+	height: 260px;
 	justify-content: center;
 	align-items: center;
 	background: #131213;
@@ -47,6 +44,7 @@ export const Menu = styled.div`
 		width: 400px;
 		height: 80px;
 		flex-direction: row;
+		border-radius: 0;
 	}
 
 `
@@ -72,7 +70,7 @@ export const MenuItem = styled(NavLink)`
 	&:hover{
 	}
 	@media screen and (max-width: 500px){
-		margin: 20px;
+		margin: 40px;
 	}
 
 `

@@ -21,10 +21,6 @@ const Navigation = () => {
 					<MenuItem to= "/projects">
 						<MdWork/>
 					</MenuItem>
-					<MenuItem to= "contact" smooth={true} duration={2000} spy={true}  exact='true' activestyle = 'true'>
-						<MdMail/>
-					</MenuItem>
-
 				</Menu>
 			<NavigationLogo>
 			</NavigationLogo>

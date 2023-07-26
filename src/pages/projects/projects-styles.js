@@ -3,16 +3,14 @@ import {motion} from 'framer-motion';
 
 export const NavigationButton = styled.button`
 	position: absolute;
-	
-	height:	82%;
-	width: 80%;
 	background: red;
 	border: none;
 	cursor: pointer;
 	background: transparent;
-	margin-left: 30px;
-	height: 800px;
-	width: 1550px;
+	margin-left: 110px;
+	margin-bottom: 230px;
+	height: 880px;
+	width: 1520px;
 	z-index: 11;
 
 `
@@ -63,6 +61,7 @@ export const Technology = styled(motion.div)`
 	justify-content: center;
 	rotate: 90deg;
 	margin-bottom: 100px;
+
 	padding: 5px 10px;
 	font-size: 16px;
 
@@ -76,22 +75,21 @@ export const TechnologyContainer = styled.div`
 	display: flex;
 	align-items: center;;
 	flex-direction: column;
-	justify-content: center;
 	width: 30px;
 	user-select: none;
+	background: red;
 `
 
 export const ProjectName = styled(motion.text)`
 	z-index: 999;
 `
 export const ProjectNameContainer = styled(motion.div)`
-
 	position: absolute;
 	display: flex;
 	align-items: center;
 	align-items: flex-end;
-	height: 100%;
-	width: 95%;
+	height: 60%;
+	width: 75%;
 	background: transparent;
 	font-size: 150px;
 	text-transform: uppercase;
@@ -116,9 +114,8 @@ export const ProjectNameContainer = styled(motion.div)`
 	z-index: 10;
 `
 export const PictureContainer = styled.div`
-	height: 100%;
-	width: 80%;
-	margin-left: 50px;
+	height: 90%;
+	margin-top: 50px;
 `
 export const Picture = styled(motion.img)`
 	height: 100%;
