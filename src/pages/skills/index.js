@@ -1,6 +1,4 @@
 import React, {useRef} from 'react';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import {SkillsContainer , Cards2Container, CarouselContainer, TextContainer, Icon, Title,CardsContainer, ContentContainer, Card} from './skills-styles';
 import {FaReact, FaPython} from 'react-icons/fa';
 import {SiDjango, SiJavascript, SiPostgresql, SiLinux, SiNeovim, SiGithub, SiPostman} from 'react-icons/si';
@@ -9,14 +7,11 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 
-
 const SkillsSection = () => {
-
-	const containerRef = useRef(null)
 
 	const responsive = {
 		superLargeDesktop: {
-			breakpoint: { max: 2500, min: 1024 },
+			breakpoint: { max: 8000, min: 1024 },
 			items: 1
 		},
 		desktop: {
@@ -28,20 +23,14 @@ const SkillsSection = () => {
 			items: 1
 		},
 		mobile: {
-			breakpoint: { max: 464, min: 0 },
+			breakpoint: { max: 500, min: 0 },
 			items: 1
 		}
 	};
 
 	return (
 		<>
-			<LocomotiveScrollProvider
-				options={{smooth: true}}
-				watch={[]}
-				containerRef={containerRef}
-			>
-				<main data-scroll-container ref={containerRef}>
-					<SkillsContainer data-scroll-section>
+					<SkillsContainer>
 						<ContentContainer>
 							<CarouselContainer>
 								<CardsContainer >
@@ -181,8 +170,6 @@ const SkillsSection = () => {
 							</TextContainer>
 						</ContentContainer>
 					</SkillsContainer>
-				</main>
-			</LocomotiveScrollProvider>
 		</>
 	)
 }

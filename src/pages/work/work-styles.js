@@ -4,17 +4,25 @@ import {motion} from 'framer-motion';
 
 
 export const WorkContainer = styled.div`
+	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	height: 4200px;
+	height: 4500px;
 	width: 100%;
-	background: red;
-	background: #060508;
-	//background: white;
 	color: black;
-
 	background: #171615;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+		height: 3900px;
+	}
+	@media screen and (max-width: 1800px){
+		height: 3800px;
+	}
+	@media screen and (max-width: 500px){
+		height: 2550px;
+	}
 `
 export const ProjectDescriptionContainer = styled.div`
 	display: flex;
@@ -24,6 +32,19 @@ export const ProjectDescriptionContainer = styled.div`
 	margin-top: 60px;
 	cursor: default;
 	margin-bottom: 50px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 600px;
+		width: 90%;
+		flex-direction: column;
+		justify-content: start;
+		margin-top: 0;
+	}
 `
 export const DescriptionItemContainer = styled.div`
 	display: flex;
@@ -32,6 +53,16 @@ export const DescriptionItemContainer = styled.div`
 	height: 100px;
 	width: 410px;
 	cursor: default;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		width: 100%;
+		height: 100%;
+	}
 `
 export const PicturesGrid = styled.div`
 	height: 600px;
@@ -45,6 +76,14 @@ export const PicturesGrid = styled.div`
 	grid-template-rows: 400px 400px; 
 	column-gap: 10px;
 	row-gap: 30px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+	}
 `
 export const PicturesContainer = styled.div`
 	display: flex;
@@ -52,6 +91,17 @@ export const PicturesContainer = styled.div`
 	align-items: center;
 	height: 600px;
 	width: 100%;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 300px;
+		justify-content: start;
+		align-items: flex-start;
+	}
 `
 export const Pictures = styled(motion.img)`
 	height: 1000px;
@@ -60,6 +110,17 @@ export const Pictures = styled(motion.img)`
 	margin-right: 80px;
 	//filter: drop-shadow(0 0 0.55rem #FA7F28);
 	cursor: grab;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		width: 100%;
+		height: 200px;
+		margin-left: 0;
+	}
 `
 export const Services = styled(motion.div)`
 	font-size: 15px;
@@ -69,6 +130,14 @@ export const Services = styled(motion.div)`
 	color: lightgray;
 	color: #FA7F28;
     white-space: nowrap;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+	}
 
 `
 export const RoleContainer = styled.div`
@@ -79,6 +148,16 @@ export const RoleContainer = styled.div`
 	font-weight: 300;
 	text-overflow: ellipsis;
 	padding-top: 30px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		padding-top: 0;
+		margin-bottom: 10px;
+	}
 `
 export const Role = styled(motion.div)`
 	font-size: 16px;
@@ -86,6 +165,14 @@ export const Role = styled(motion.div)`
 	font-family: 'Unbounded', cursive;
 	font-weight: 300;
 	text-align: justify;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+	}
 `
 export const ProjectNameContainer = styled.div`
 	display: flex;
@@ -93,23 +180,50 @@ export const ProjectNameContainer = styled.div`
 	align-items: center;
 	height: 200px;
 	width: 80%;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		text-align: center;
+		width: 100%;
+	}
 `
 export const ProjectName = styled(motion.text)`
 	color: white;
 	font-size: 90px;
 	text-transform: uppercase;
 	cursor: default;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		font-size: 45px;
+	}
 `
 export const TitleContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
 	justify-content: center;
 	align-items: center;
 	height: 700px;
 	width: 100%;
 	color: white;
 	background: #171615;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 680px;
+	}
 `
 export const GitHubLink = styled(Link)`
 	position: absolute;
@@ -132,7 +246,15 @@ export const GitHubLink = styled(Link)`
 	text-transform: uppercase;
 	font-family: 'Unbounded', cursive;
 	font-weight: 600;
-
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		display: none;
+	}
 
 `
 
@@ -147,6 +269,16 @@ export const AdvantagesContainer = styled.div`
 	font-size: 20px;
 	text-transform: uppercase;
 	font-family: 'Tektur', cursive;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		width: 90%;
+
+	}
 `
 export const Cards2Container = styled.div`
 	height: 100%;
@@ -163,7 +295,6 @@ export const Cards2Container = styled.div`
 `
 export const GridContainer = styled.div`
 	display: flex;
-	justify-content: center;
 	width: 80%;
 	display: grid;
 	justify-content: center;
@@ -174,6 +305,20 @@ export const GridContainer = styled.div`
 	row-gap: 20px;
 	margin-bottom: 20px;
 	margin-top: 30px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		width: 100%;
+		height: 1000px;
+		margin-top: 50px;
+		grid-template-columns: 150px 150px;
+		grid-template-rows: 150px 150px 150px 150px;
+		row-gap: 70px;
+	}
 `
 export const GridItem = styled.div`
 	display: flex;
@@ -184,6 +329,17 @@ export const GridItem = styled.div`
 	width: 400px;
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	border-radius: 60px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 200px;
+		width: 150px;
+		border-radius: 30px;
+	}
 
 
 `
@@ -209,6 +365,18 @@ export const Icon = styled.button`
 		color: lightgray;
 		scale: 1.1;
 	}
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 70px;
+		width: 70px;
+		margin-right: 0;
+		background: transparent;
+	}
 `
 export const Feature = styled.div`
 	width: 80%;
@@ -218,11 +386,19 @@ export const Feature = styled.div`
 	text-transform: none;
 	text-align: justify;
 
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		font-size: 10px;
+		text-align: center;
+
+	}
 `
-export const CardsContainer = styled.div`
-	width: 87%;
-	color: black;
-`
+
 export const Card = styled(motion.div)`
 	display: flex;
 	align-items: center;
@@ -240,15 +416,55 @@ export const Card = styled(motion.div)`
 	user-select: none;
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	white-space: nowrap;
-
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 100px;
+		width: 100px;
+	}
 `
 export const CarouselContainer = styled.div`
 	display: flex;
-	margin-left: 250px;
 	align-items: center;
 	height: 800px;
 	width: 100%;
+	//background: red;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 800px;
+		background: #171615;
+	}
 `
+export const CardsContainer = styled.div`
+	width: 87%;
+	color: black;
+	margin-left: 150px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		margin-left: 0;
+		//margin-bottom: 300px;
+		padding: 0;
+		//height: 50%;
+		width: 100%;
+		margin-bottom: 650px;
+
+	}
+`
+
 export const PictureContainer = styled.div`
 	position: relative;
 	display: flex;
@@ -258,40 +474,52 @@ export const PictureContainer = styled.div`
 	height: 80vh;
 	width: 65%;
 	user-select: none;
-
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		margin-left: 0;
+		height: 450px;
+		width: 100%;
+	}
 `
 export const Picture = styled(motion.img)`
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
 	margin-right: 80px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		margin-right: 20px;
+	}
 `
 export const VideoContainer = styled.div`
 	position: relative;
 	display: flex;
-	height: 800px;
-	width: 1200px;
+	height: 2000px;
+	width: 95%;
 	justify-content: center;
 	align-items: center;
 	user-select: none;
-`
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		margin-bottom: 900px;
+		height: 100%;
+		width: 100%;
+	}
 
-export const PictureContainerMac = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50vh;
-	width: 80%;
-	user-select: none;
-`
-export const NavigationButton = styled.button`
-	background: red;
-	border: none;
-	cursor: pointer;
-	background: transparent;
-	margin-left: 30px;
-	height: 800px;
-	width: 1550px;
-	color: white;
 `
 

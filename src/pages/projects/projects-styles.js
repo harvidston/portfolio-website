@@ -13,6 +13,23 @@ export const NavigationButton = styled.button`
 	width: 1520px;
 	z-index: 11;
 
+	@media screen and (max-width: 2500px){
+		height: 620px;
+		width: 1100px;
+		margin-left: 60px;
+		margin-bottom: 160px;
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 200px;
+		width: 330px;
+		margin-top: 270px;
+		margin-left: 20px;
+	}
+
 `
 export const ProjectsContainer = styled.div`
 	display: flex;
@@ -28,19 +45,14 @@ export const ProjectsContainer = styled.div`
 	background: #B99EA2;
 
 	background: #29322A;
-`
-export const TitleContainer = styled.div`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 10%;
-	width: 100%;
-	text-transform: uppercase;
-
-`
-export const Title = styled.div`
-	font-size: 110px;
-
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+	}
 `
 export const ContentContainer = styled.div`
 	display: flex;
@@ -51,7 +63,50 @@ export const ContentContainer = styled.div`
 	width: 100%;
 	color: transparent;
 	background: #29322A;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 100%;
+		width: 100%;
+		background: #29322A;
+		align-items: flex-start;
+	}
 `
+export const TitleContainer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10%;
+	width: 100%;
+	text-transform: uppercase;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 200px;
+	}
+
+`
+export const Title = styled.div`
+	font-size: 110px;
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+	}
+
+`
+
 export const Technology = styled(motion.div)`
 
 	display: flex;
@@ -112,14 +167,62 @@ export const ProjectNameContainer = styled(motion.div)`
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	z-index: 10;
+	@media screen and (max-width: 2500px){
+		height: 65%;
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+		font-size: 50px;
+	}
+	@media screen and (max-width: 500px){
+		height: 500px;
+		width: 90%;
+		font-size: 45px;
+	text-shadow: 1px 1px 1px #FA7F28,
+		1px 2px 1px black,
+		1px 3px 1px black,
+		1px 4px 1px black,
+		1px 5px 1px black,
+		1px 6px 1px black,
+		1px 7px 1px black,
+		1px 18px 6px rgba(1, 1, 1, 0.1),
+			1px 22px 10px rgba(1, 1, 1, 0.2);
+	}
 `
 export const PictureContainer = styled.div`
 	height: 90%;
 	margin-top: 50px;
+
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+		height: 80%;
+		margin-top: 50px;
+	}
+	@media screen and (max-width: 500px){
+		height: 200px;
+		height: 700px;
+		margin-right: 5px;
+	}
+
 `
 export const Picture = styled(motion.img)`
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
+
+	@media screen and (max-width: 2500px){
+	}
+	@media screen and (max-width: 2000px){
+	}
+	@media screen and (max-width: 1800px){
+	}
+	@media screen and (max-width: 500px){
+		height: 100%;
+		width: 100%;
+	}
 `
 

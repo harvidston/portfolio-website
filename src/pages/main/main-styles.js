@@ -10,6 +10,16 @@ export const FooterContainer = styled.div`
 	width: 100%;
 	background: #29322A;
 	cursor: default;
+
+	@media screen and (max-width: 2500px){
+		height: 50px;
+	}
+	@media screen and (max-width: 2000px){
+		height: 50px;
+	}
+	@media screen and (max-width: 1800px){
+		height: 50px;
+	}
 	@media screen and (max-width: 500px){
 		height: 30px;
 		width: 95%;
@@ -29,6 +39,16 @@ export const RightsContainer = styled.div`
 	font-weight: 200;
 	margin-bottom: 40px;
 
+	@media screen and (max-width: 2500px){
+		margin-bottom: 0;
+	}
+	@media screen and (max-width: 2000px){
+		margin-bottom: 0;
+	}
+	@media screen and (max-width: 1800px){
+		margin-bottom: 0;
+	}
+
 `
 export const MainContainer = styled.div`
 	display: flex;
@@ -41,12 +61,20 @@ export const MainContainer = styled.div`
 	background: #29322A;
 	overflow: hidden;
 
+	@media screen and (max-width: 2500px){
+		height: fit-content;
+	}
 	@media screen and (max-width: 2000px){
-		height: 140vh;	
+		height: fit-content;
+	}
+	@media screen and (max-width: 1800px){
+		//height: 1000px;	
+		//height: 100vh;
+		height: fit-content;
 	}
 	@media screen and (max-width: 500px){
 		justify-content: start;
-		height: 3650px;	
+		height: 3700px;	
 	}
 `
 export const FirstRow = styled.div`
@@ -63,8 +91,15 @@ export const FirstRow = styled.div`
 	margin-bottom: 20px;
 	margin-top: 30px;
 
+	@media screen and (max-width: 2500px){
+		grid-template-columns: 400px 950px 400px ;
+	}
 	@media screen and (max-width: 2000px){
 		grid-template-columns: 400px 950px 400px ;
+	}
+	@media screen and (max-width: 1800px){
+		grid-template-columns: 300px 850px 300px ;
+		grid-template-rows: 300px  ;
 	}
 	@media screen and (max-width: 500px){
 		display: flex;
@@ -86,10 +121,16 @@ export const SecondRow = styled.div`
 	row-gap: 20px;
 	margin-bottom: 20px;
 
+	@media screen and (max-width: 2500px){
+		grid-template-columns: 950px 400px 400px ;
+	}
 	@media screen and (max-width: 2000px){
 		grid-template-columns: 950px 400px 400px ;
 	}
-
+	@media screen and (max-width: 1800px){
+		grid-template-columns: 850px 300px 300px ;
+		grid-template-rows: 300px  ;
+	}
 	@media screen and (max-width: 500px){
 		display: flex;
 		flex-direction: column;
@@ -109,8 +150,15 @@ export const ThirdRow = styled.div`
 	column-gap: 20px;
 	row-gap: 20px;
 
+	@media screen and (max-width: 2500px){
+		grid-template-columns: 885px 885px ;
+	}
 	@media screen and (max-width: 2000px){
 		grid-template-columns: 885px 885px ;
+	}
+	@media screen and (max-width: 1800px){
+		grid-template-columns: 735px 735px ;
+		grid-template-rows: 300px  ;
 	}
 	@media screen and (max-width: 500px){
 		display: flex;
@@ -130,15 +178,24 @@ export const NameWidget = styled(motion.div)`
 	background-image: linear-gradient(to right top, #201f1e, #1d1c1b, #191817, #161514, #121110);
 	border-radius: 60px;
 
+
+	@media screen and (max-width: 2500px){
+		height: 400px;
+		width: 950px;
+	}
 	@media screen and (max-width: 2000px){
 		height: 400px;
 		width: 950px;
+	}
+	@media screen and (max-width: 1800px){
+		height: 300px;
+		width: 850px;
 	}
 	@media screen and (max-width: 500px){
 		height: 100px;
 		width: 380px;
 		border-radius: 10px;
-		padding-bottom: 10px;
+		padding-bottom: 30px;
 	}
 `
 export const LinksWidget = styled(motion.div)`
@@ -153,15 +210,22 @@ export const LinksWidget = styled(motion.div)`
 	border-radius: 60px;
 	overflow: hidden;
 
+	@media screen and (max-width: 2500px){
+		width: 885px;
+	}
 	@media screen and (max-width: 2000px){
 		width: 885px;
+	}
+	@media screen and (max-width: 1800px){
+		height: 300px;
+		width: 735px;
 	}
 	@media screen and (max-width: 500px){
 		display: flex;
 		flex-direction: column;
 		width: 95%;
 		height: fit-content;
-		padding-bottom: 30px;
+		//padding-bottom: 30px;
 		//height: 600px;
 	}
 `
@@ -174,10 +238,14 @@ export const NameContainer = styled.div`
 	width: 80%;
 	margin-bottom: 35px;
 
+	@media screen and (max-width: 1800px){
+		width: 785px;
+	}
 	@media screen and (max-width: 500px){
 		flex-direction: row;
 		width: 95%;
 		margin-bottom: 0;
+		margin-top: 30px;
 	}
 `
 export const Name = styled.text`
@@ -203,6 +271,9 @@ export const Name = styled.text`
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	margin-bottom: 20px;
 
+	@media screen and (max-width: 1800px){
+		font-size: 100px;
+	}
 	@media screen and (max-width: 500px){
 		margin-top: 5px;
 		margin-bottom: 5px;
@@ -234,6 +305,10 @@ export const PictureWidget = styled(motion.div)`
 
 	@media screen and (max-width: 2000px){
 	}
+	@media screen and (max-width: 1800px){
+		height: 300px;
+		width: 300px;
+	}
 	@media screen and (max-width: 500px){
 		height: 380px;
 		width: 380px;
@@ -252,10 +327,17 @@ export const EducationWidget = styled(motion.div)`
 	border-radius: 60px;
 	overflow: hidden;
 
+	@media screen and (max-width: 2500px){
+		width: 950px;
+	}
 	@media screen and (max-width: 2000px){
 		width: 950px;
 	}
-
+	@media screen and (max-width: 1800px){
+		justify-content: end;
+		height: 300px;
+		width: 850px; 
+	}
 	@media screen and (max-width: 500px){
 		height: 380px;
 		width: 380px;
@@ -365,6 +447,11 @@ export const PictureProjects = styled.img`
 	object-fit: cover;
 	opacity: 80%;
 
+	@media screen and (max-width: 1800px){
+		height: 170px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
 	@media screen and (max-width: 500px){
 		height: 200px;
 	}
@@ -376,6 +463,9 @@ export const Picture = styled.img`
 	border-bottom-right-radius: 30%;
 	border-top-left-radius: 30%;
 
+	@media screen and (max-width: 1800px){
+		height: 250px;
+	}
 	@media screen and (max-width: 500px){
 		height: 300px;
 	}
@@ -446,6 +536,11 @@ export const ResumeWidget = styled(motion.div)`
 	border-radius: 60px;
 	overflow: hidden;
 
+	@media screen and (max-width: 1800px){
+		justify-content: end;
+		height: 300px;
+		width: 300px;
+	}
 	@media screen and (max-width: 500px){
 		height: 380px;
 		width: 380px;
@@ -470,6 +565,9 @@ export const JobTitle = styled.text`
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	cursor: default;
 
+	@media screen and (max-width: 1800px){
+		font-size: 30px;
+	}
 	@media screen and (max-width: 500px){
 		font-size: 23px;
 	}
@@ -492,15 +590,25 @@ export const WidgetText = styled.div`
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	cursor: default;
 
+	@media screen and (max-width: 2500px){
+		width: 100%;
+		margin-left: 100px;
+	}
 	@media screen and (max-width: 2000px){
 		width: 100%;
 		margin-left: 100px;
+	}
+	@media screen and (max-width: 1800px){
+		margin-left: 70px;
+		margin-bottom: 30px;
+		font-size: 30px;
 	}
 
 	@media screen and (max-width: 500px){
 		width: 100%;
 		margin-left: 80px;
-		font-size: 30px;
+		font-size: 32px;
+		margin-bottom: 30px;
 	}
 `
 export const WidgetDescription = styled.div`
@@ -513,13 +621,23 @@ export const WidgetDescription = styled.div`
 	font-size: 16px;
 	cursor: default;
 
+	@media screen and (max-width: 2500px){
+		width: 100%;
+		margin-left: 100px;
+	}
 	@media screen and (max-width: 2000px){
 		width: 100%;
 		margin-left: 100px;
 	}
+	@media screen and (max-width: 1800px){
+		width: 100%;
+		margin-left: 70px;
+		margin-top: 10px;
+	}
 
 	@media screen and (max-width: 500px){
 		margin-left: 80px;
+		margin-top: 50px;
 	}
 `
 export const PersonalLink = styled(Link)`
@@ -537,9 +655,12 @@ export const PersonalLink = styled(Link)`
 	transition: 0.5s;
 
 	&:hover{
-
 		color: lightgray;
 		scale: 1.1;
+	}
+	@media screen and (max-width: 1800px){
+		height: 190px;
+		width: 190px;
 	}
 	@media screen and (max-width: 500px){
 		margin-bottom: 10px;
@@ -564,6 +685,12 @@ export const Button = styled(motion.button)`
 	&:hover{
 		color: lightgray;
 	}
+	@media screen and (max-width: 1800px){
+		margin-top: 10px;
+		margin-left: 20px;
+		height: 190px;
+		width: 190px;
+	}
 
 `
 export const Icon = styled.div`
@@ -574,7 +701,14 @@ export const EducationContainer = styled.div`
 	width: 80%;	
 	margin-bottom: 70px;	
 
+	@media screen and (max-width: 2500px){
+		width: 90%;
+	}
 	@media screen and (max-width: 2000px){
+		width: 90%;
+	}
+	@media screen and (max-width: 1800px){
+		margin-bottom: 40px;
 		width: 90%;
 	}
 	@media screen and (max-width: 500px){
@@ -591,6 +725,9 @@ export const Period = styled.div`
 	color: gray;
 	margin-bottom: 10px;
 	cursor: default;
+	@media screen and (max-width: 1800px){
+		margin-top: 20px;
+	}
 	@media screen and (max-width: 500px){
 		font-size: 14px;
 		white-space: initial;
@@ -615,8 +752,14 @@ export const BachelorDegree = styled.div`
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 	cursor: default;
 
+	@media screen and (max-width: 2500px){
+		font-size: 38px;
+	}
 	@media screen and (max-width: 2000px){
 		font-size: 38px;
+	}
+	@media screen and (max-width: 1800px){
+		font-size: 30px;
 	}
 	@media screen and (max-width: 500px){
 		font-size: 20px;
@@ -641,8 +784,14 @@ export const Faculty = styled.div`
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 
+	@media screen and (max-width: 2500px){
+		font-size: 17px;
+	}
 	@media screen and (max-width: 2000px){
 		font-size: 17px;
+	}
+	@media screen and (max-width: 1800px){
+		font-size: 16px;
 	}
 	@media screen and (max-width: 500px){
 		margin-left: 20px;
@@ -665,21 +814,32 @@ export const University = styled.div`
 		1px 25px 35px rgba(1, 1, 1, 0.2),
 		1px 30px 60px rgba(1, 1, 1, 0.1);
 
+	@media screen and (max-width: 2500px){
+		font-size: 17px;
+	}
 	@media screen and (max-width: 2000px){
 		font-size: 17px;
+	}
+	@media screen and (max-width: 1800px){
+		font-size: 16px;
 	}
 	@media screen and (max-width: 500px){
 		margin-left: 20px;
 		font-size: 14px;
 		white-space: initial;
+		margin-bottom: 20px;
 	}
 `
 export const LocationContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 80%;
+	width: 200px;
+	height: 170px;
+	padding-top: 30px;
 	
+	@media screen and (max-width: 1800px){
+	}
 `
 export const LinksContainer = styled.div`
 	display: flex;
@@ -687,9 +847,14 @@ export const LinksContainer = styled.div`
 	justify-content: center;
 	width: 80%;
 
+	@media screen and (max-width: 1800px){
+		width: 90%;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
 	@media screen and (max-width: 500px){
 		flex-direction: column;
-		margin-top: 10px;
+		margin-top: 30px;
 	}
 `
 export const EmailCopiedMessage = styled(motion.div)`
@@ -708,10 +873,13 @@ export const EmailCopiedMessage = styled(motion.div)`
 	cursor: default;
 	height: 20px;
 
+	@media screen and (max-width: 1800px){
+
+	}
 	@media screen and (max-width: 500px){
 		position: absolute;
-		bottom: -920px;
-		width: 340px;	
-		font-size: 15px;
+		bottom: -1700px;
+		width: 300px;	
+		font-size: 13px;
 	}
 `

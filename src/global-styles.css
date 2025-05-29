@@ -32,3 +32,16 @@ html.has-scroll-smooth {
 a {
     -webkit-tap-highlight-color: transparent;
 }
+
+::-webkit-scrollbar{
+	height:4px;
+	width: 4px;
+}
+::-webkit-scrollbar-track{
+	background: #161514;
+
+}
+::-webkit-scrollbar-thumb{
+	background: #3a3837;
+	border-radius: 20px;
+}

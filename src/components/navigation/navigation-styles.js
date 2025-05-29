@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
-import {Link} from 'react-scroll';
 
 export const NavigationContainer = styled.nav`
 	position:fixed;
@@ -12,7 +11,18 @@ export const NavigationContainer = styled.nav`
 	justify-content: center;
 	align-items: center;
 	background: transparent;
-	z-index: 1;
+	z-index: 5;
+
+	@media screen and (max-width: 2500px){
+		width: 90px;
+	}
+	@media screen and (max-width: 2000px){
+		width: 90px;
+
+	}
+	@media screen and (max-width: 1600px){
+
+	}
 	@media screen and (max-width: 500px){
 		position: fixed;
 		bottom: 0;
@@ -41,10 +51,11 @@ export const Menu = styled.div`
 	border: 1px solid #2b2d2e;
 
 	@media screen and (max-width: 500px){
-		width: 400px;
+		width: 100%;
 		height: 80px;
 		flex-direction: row;
 		border-radius: 0;
+		border: 0px solid #2b2d2e;
 	}
 
 `
@@ -87,45 +98,6 @@ export const ItemTitle = styled.div`
 	display: flex;
 	justify-content: start;
 
-`
-
-
-
-
-
-
-export const AuthorizationWidgetContainer = styled.div`
-	position: absolute;
-	height: 60px;
-	display: flex;
-	right: 5vw; margin-top: 10px;
-`
-export const AuthorizationWidget = styled(NavLink)`
-	display: flex;
-	height: 100%;
-	width: 200px;
-
-	background: #171616;
-	text-decoration: none;
-	border-radius: 15px;
-	box-shadow: 0 0 30px 5px #000;
-	border: 1px solid #2b2d2e;
-
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	justify-content: space-between;
-	overflow: hidden;
-
-	cursor: pointer;
-	user-select: none;
-	-moz-user-select: none;
-
-	transition: 0.5s;
-
-	&:hover{
-
-	}
 `
 export const WidgetIcon = styled.div`
 	display: flex;

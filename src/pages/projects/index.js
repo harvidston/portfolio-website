@@ -1,14 +1,10 @@
 import React, {useRef} from 'react';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-
-import {ProjectsContainer, NavigationButton, Technology, ContentContainer, ProjectNameContainer, TechnologyContainer,PictureContainer, ProjectName, Picture} from './projects-styles';
+import {ProjectsContainer, NavigationButton,ContentContainer, ProjectNameContainer,PictureContainer, ProjectName, Picture} from './projects-styles';
 import Desktop from '../../static/images/main_project/Desktop.png';
 import { useNavigate } from 'react-router-dom';
 
 
 const ProjectsSection = () => {
-	const containerRef = useRef(null)
 	const navigate = useNavigate()
 
 	const navigationHandler = (e) => {
@@ -18,14 +14,8 @@ const ProjectsSection = () => {
 
 	return (
 		<>
-			<LocomotiveScrollProvider
-				options={{smooth: true,}}
-				watch={[]}
-				containerRef={containerRef}
-			>
-				<main data-scroll-container ref={containerRef}>
 					<ProjectsContainer id='projects'>
-						<ContentContainer data-scroll-section>
+						<ContentContainer>
 		<ProjectNameContainer
 				initial={{ scale: 0.5 }}
 				animate={{scale: 1}}
@@ -47,7 +37,7 @@ const ProjectsSection = () => {
 							<NavigationButton onClick={navigationHandler}/>
 		<PictureContainer >
 		<Picture
-				initial={{ scale: 0 }}
+				initial={{ scale: 0.8 }}
 				animate={{scale: 1}}
 				transition={{
 					type: "spring",
@@ -58,10 +48,7 @@ const ProjectsSection = () => {
 		</PictureContainer>
 						</ContentContainer>	
 					</ProjectsContainer>
-				</main>
-			</LocomotiveScrollProvider>
 		</>
-		
 	)
 }
 

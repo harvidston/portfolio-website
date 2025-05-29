@@ -1,14 +1,11 @@
 import React, {useRef} from 'react';
 import {WorkContainer, AdvantagesContainer, VideoContainer, GridItem, GridContainer, CardsContainer, Icon, Feature,CarouselContainer, Pictures, PicturesContainer, GitHubLink,  DescriptionItemContainer, ProjectDescriptionContainer,  Role, RoleContainer, PictureContainer, Picture,  ProjectName, Services, TitleContainer,  ProjectNameContainer} from './work-styles';
 import 'video-react/dist/video-react.css'; 
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-import { useNavigate } from 'react-router-dom';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import Art from '../../static/images/main_project/1.png';
+import Art1 from '../../static/images/main_project/1.png';
 import Art2 from '../../static/images/main_project/2.png';
-import Art4 from '../../static/images/main_project/6.png';
-import Art5 from '../../static/images/artproject.png';
-import Art6 from '../../static/images/main_project/8.png';
+import Art6 from '../../static/images/main_project/6.png';
+import Art from '../../static/images/main_project/artproject.png';
+import Art8 from '../../static/images/main_project/8.png';
 import Art7 from '../../static/images/main_project/7.png';
 import Art9 from '../../static/images/main_project/9.png';
 import Art10 from '../../static/images/main_project/10.png';
@@ -22,7 +19,7 @@ import {BsFillBasket3Fill} from 'react-icons/bs';
 import {MdPalette} from 'react-icons/md';
 import {FaFaceSmileBeam} from 'react-icons/fa6';
 import { Player } from 'video-react';
-import Video from '../../static/images/video.mp4';
+import Video from '../../static/video/video.mp4';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Desktop2 from '../../static/images/main_project/Desktop2.png';
@@ -30,12 +27,11 @@ import Desktop2 from '../../static/images/main_project/Desktop2.png';
 const ArtPage = () => {
 
 	const containerRef = useRef(null)
-	const navigate = useNavigate()
 
 	const responsive = {
 		superLargeDesktop: {
-			breakpoint: { max: 2500, min: 1024 },
-			items: 1
+			breakpoint: { max: 8000, min: 1024 },
+			items: 3.2
 		},
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },
@@ -46,31 +42,13 @@ const ArtPage = () => {
 			items: 1
 		},
 		mobile: {
-			breakpoint: { max: 464, min: 0 },
+			breakpoint: { max: 500, min: 0 },
 			items: 1
 		}
 	};
 
-	const navigationHandler = (e) => {
-		e.preventDefault()
-		navigate(`/`)
-	}
 	return( 
-<LocomotiveScrollProvider
-  options={
-    {
-		smooth: true,
-		offset: ["100%", 0],
-    }
-  }
-  watch={
-    [
-    ]
-  }
-  containerRef={containerRef}
->
-  <main data-scroll-container ref={containerRef}>
-		<WorkContainer data-scroll-section>
+		<WorkContainer>
 			<TitleContainer>
 		<ProjectNameContainer ><ProjectName
 					initial={{ scale: 0 }}
@@ -171,11 +149,11 @@ const ArtPage = () => {
 					</GridItem>
 					<GridItem>
 		<Icon><BsFillBasket3Fill/></Icon>
-     <Feature>A convenient basket of goods, where the user at any time has the function of viewing the contents of the basket and can change it at his own discretion</Feature>
+     <Feature>A convenient basket for products</Feature>
 					</GridItem>
 					<GridItem>
 		<Icon><MdPalette/></Icon>
-    <Feature>A convenient catalog of works, which contains mechanisms for categorizing and searching for works by types, tags and other parameters, for easy selection of works of interest, pagination</Feature>
+    <Feature>A convenient catalog of works with mechanisms for categorizing and searching works </Feature>
 					</GridItem>
 					<GridItem>
 		<Icon>< BiSolidLike/></Icon>
@@ -196,12 +174,12 @@ const ArtPage = () => {
 					thumbWidth = {10}
 				>
 					<Pictures src={Art7}/>
-					<Pictures src={Art}/>
+					<Pictures src={Art1}/>
 					<Pictures src={Art2}/>
-					<Pictures src={Art5}/>
+					<Pictures src={Art}/>
 					<Pictures src={Art12}/>
-					<Pictures src={Art4}/>
 					<Pictures src={Art6}/>
+					<Pictures src={Art8}/>
 					<Pictures src={Art9}/>
 					<Pictures src={Art10}/>
 					<Pictures src={Art13}/>
@@ -217,10 +195,6 @@ const ArtPage = () => {
 				/>
 			</VideoContainer>
 		</WorkContainer>
-  </main>
-
-
-</LocomotiveScrollProvider>
 	)
 }
 

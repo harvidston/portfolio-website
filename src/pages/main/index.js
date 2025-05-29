@@ -1,8 +1,6 @@
 import React, {useState, useRef} from 'react';
 import {MainContainer, Picture, LocationContainer, PictureProjects, FooterContainer, Tick, RightsContainer, EmailCopiedMessage, LinksWidget, Button, PersonalLink, LinksContainer, ThirdRow,  SecondRow, Faculty, FirstRow, Period, JobTitle,  BachelorDegree, University,  Icon, ResumeWidget,  NameWidget, EducationWidget, PictureWidget, Name, NameContainer, WidgetText, WidgetDescription, LastNameContainer,  EducationContainer} from './main-styles.js';
 import {ImDownload3} from 'react-icons/im';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import {RiInstagramFill} from 'react-icons/ri';
 import {BiLogoTelegram} from 'react-icons/bi';
 import {SiLinkedin, SiGithub, SiMaildotru} from 'react-icons/si';
@@ -13,7 +11,6 @@ import ResumePDF from '../../static/pdf/Resume.pdf';
 import Desktop from '../../static/images/main_project/Desktop.png';
 
 const MainPage = () => {
-	const containerRef = useRef(null)
 	const email = 'zaitsev-work@mail.ru'
 	const [isCopied, setIsCopied]= useState('')
 
@@ -23,9 +20,7 @@ const MainPage = () => {
     };
 	return( 
 		<>
-			<LocomotiveScrollProvider options={{smooth: true}} watch={[]} containerRef={containerRef}>
-				<main data-scroll-container ref={containerRef}>
-					<MainContainer data-scroll-section>
+					<MainContainer>
 						<FirstRow>
 							<PictureWidget
 								initial={{ y: -800,  scale: 0 }}
@@ -116,7 +111,7 @@ const MainPage = () => {
 									damping: 30,
 								}}>
 								<LocationContainer>
-									<Icon style={{fontSize: 150, color: "gray"}}><IoEarthOutline/></Icon>
+									<Icon style={{fontSize: 160, color: "gray"}}><IoEarthOutline/></Icon>
 								</LocationContainer>
 								<WidgetDescription>Minsk, Belarus</WidgetDescription>
 								<WidgetText>Location</WidgetText>
@@ -183,8 +178,6 @@ const MainPage = () => {
 							</EmailCopiedMessage>
 						: null}
 					</MainContainer>
-				</main>
-			</LocomotiveScrollProvider>
 		</>
 	)
 }

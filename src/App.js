@@ -4,9 +4,6 @@ import Router from './components/router';
 import Navigation from './components/navigation';
 import AnimatedCursor from "react-animated-cursor"
 import { AnimatePresence} from 'framer-motion';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-
 import './global-styles.css';
 
 function App() {
@@ -43,7 +40,6 @@ const containerRef = useRef(null)
 				}}
 
 			/>
-			<LocomotiveScrollProvider options={{smooth: true}} watch={[]} containerRef={containerRef} />
 			<Navigation/>
 
 		</BrowserRouter>
