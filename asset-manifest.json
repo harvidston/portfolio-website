@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/.github.io/portfolio-website/static/css/main.7f165aae.css",
+    "main.js": "/.github.io/portfolio-website/static/js/main.9cee24e1.js",
+    "static/media/video.mp4": "/.github.io/portfolio-website/static/media/video.15323aaf61a5a3165b65.mp4",
+    "static/media/Desktop.png": "/.github.io/portfolio-website/static/media/Desktop.4c8e6f9c42e31d127867.png",
+    "static/media/Desktop2.png": "/.github.io/portfolio-website/static/media/Desktop2.6ad232c9b398c8d28517.png",
+    "static/media/7.png": "/.github.io/portfolio-website/static/media/7.0648452dbfde5eec4919.png",
+    "static/media/artproject.png": "/.github.io/portfolio-website/static/media/artproject.0ad016ae2bfcfde0fcef.png",
+    "static/media/1.png": "/.github.io/portfolio-website/static/media/1.4fe0ba605afdd1edbf66.png",
+    "static/media/glasses.jpg": "/.github.io/portfolio-website/static/media/glasses.ceaebc56e6dabe1dddcd.jpg",
+    "static/media/9.png": "/.github.io/portfolio-website/static/media/9.ffc23f8d708897466057.png",
+    "static/media/2.png": "/.github.io/portfolio-website/static/media/2.658a095dfd1889a97cab.png",
+    "static/media/11.png": "/.github.io/portfolio-website/static/media/11.872ba1ca2a12eeb0db24.png",
+    "static/media/Resume.pdf": "/.github.io/portfolio-website/static/media/Resume.2592f59c9f4f7a61aba1.pdf",
+    "static/media/10.png": "/.github.io/portfolio-website/static/media/10.fe8b0eb2f80540932464.png",
+    "static/media/6.png": "/.github.io/portfolio-website/static/media/6.8f16ee800d66e7765c89.png",
+    "static/media/13.png": "/.github.io/portfolio-website/static/media/13.4520c520ab1abe269899.png",
+    "static/media/8.png": "/.github.io/portfolio-website/static/media/8.e88f2ff792949108cd5e.png",
+    "static/media/12.png": "/.github.io/portfolio-website/static/media/12.4c610ecb5a948a4f0cb0.png",
+    "static/media/revicons.eot": "/.github.io/portfolio-website/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/.github.io/portfolio-website/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/verify.png": "/.github.io/portfolio-website/static/media/verify.1142fd488a1de449301a.png",
+    "static/media/revicons.woff": "/.github.io/portfolio-website/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/.github.io/portfolio-website/index.html",
+    "main.7f165aae.css.map": "/.github.io/portfolio-website/static/css/main.7f165aae.css.map",
+    "main.9cee24e1.js.map": "/.github.io/portfolio-website/static/js/main.9cee24e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f165aae.css",
+    "static/js/main.9cee24e1.js"
+  ]
+}
