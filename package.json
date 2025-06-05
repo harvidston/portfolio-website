@@ -1,4 +1,5 @@
 {
+  "homepage": "http://harvidston/.github.io/portfolio-website",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +17,7 @@
     "react-multi-carousel": "^2.8.4",
     "react-particle-effect-button": "^1.0.1",
     "react-router-dom": "^6.14.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^0.0.0",
     "react-scroll": "^1.8.9",
     "react-smooth-scrolling": "^1.0.2",
     "react-useanimations": "^2.10.0",
@@ -26,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "resize-observer-polyfill": "^1.5.1",
     "typescript": "^5.1.6",
     "typescript-styled-plugin": "^0.18.3"
